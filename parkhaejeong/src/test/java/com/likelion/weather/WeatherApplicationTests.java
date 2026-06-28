@@ -1,10 +1,10 @@
-package com.likelion.likelion_project;
+package com.likelion.weather;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LikelionProjectApplicationTests {
+class WeatherApplicationTests {
 
     @Test
     void contextLoads() {

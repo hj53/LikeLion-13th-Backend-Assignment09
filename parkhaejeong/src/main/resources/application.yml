@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html    # Swagger ?? ?? ??
+    groups-order: asc
+    operations-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+
+external-api:
+  open-weather:
+    # ???? WEATHER_API_KEY? ??? ????, ??? ??(:) ?? ?? ?? ??
+    api-key: ${WEATHER_API_KEY:02441834580d30b2311e4037c72854c3}
+    url: "https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={apiKey}&units=metric&lang=kr"
