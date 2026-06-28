@@ -24,7 +24,7 @@ public class WeatherController {
     @GetMapping
     public ResponseEntity<WeatherResponseDto> getWeather(
             @Parameter(description = "위도 (예: 37.5665)", example = "37.5665") @RequestParam Double lat,
-            @Parameter(description = "경도 (예: 126.9780)", example = "126.9780") @RequestParam Double lon) {
+            @Parameter(description = "경도 (예: 126.9780)", example = "126.9780") @RequestParam Double lon) { // 스웨거 화면에 나오는 description 부분과 name 부분(순서대로)
 
         WeatherResponseDto responseDto = weatherService.getWeather(lat, lon);
         return ResponseEntity.ok(responseDto);
